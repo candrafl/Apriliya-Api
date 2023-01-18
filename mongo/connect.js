@@ -22,7 +22,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 
 function connectMongoDb() {
-  mongoose.connect(process.env.DB_URI, { 
+  mongoose.connect("mongodb+srv://smkxt7:<password>@cluster0.hm6kawt.mongodb.net/?retryWrites=true&w=majority", { 
     useNewUrlParser: true, 
     useUnifiedTopology: true
   });
